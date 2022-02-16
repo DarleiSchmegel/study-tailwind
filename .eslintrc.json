@@ -1,3 +1,15 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "at-rule-no-unknown": [ true, {
+      "ignoreAtRules": [
+        "extends",
+        "tailwind"
+      ]
+    }],
+    "block-no-empty": null,
+    "unit-allowed-list": ["em", "rem", "s"]
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "css.validate": true
 }
